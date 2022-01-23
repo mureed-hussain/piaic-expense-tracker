@@ -3,20 +3,22 @@ import "./App.css";
 import { Header } from "./components/Header";
 import { Balance } from "./components/Balance";
 import { IncExp } from "./components/IncExp";
-import { Transcition } from "./components/Transcition";
+import { Transaction } from "./components/Transcation";
 import { AddTrans } from "./components/AddTrans";
+
+import { GlobalProvider } from "./context/GlobalState";
 
 function App() {
   return (
-    <div>
+    <GlobalProvider>
       <Header />
       <div className="container">
         <Balance />
         <IncExp />
-        <Transcition />
+        <Transaction />
         <AddTrans />
       </div>
-    </div>
+    </GlobalProvider>
   );
 }
 
