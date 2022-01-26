@@ -17,7 +17,7 @@ export const TransactionProvider = ({ children }) => {
     dispatch({
       type: "ADD TRANSACTION",
       payload: {
-        amount: transObj.ampunt,
+        amount: transObj.amount,
         desc: transObj.desc,
       },
     });
@@ -25,8 +25,8 @@ export const TransactionProvider = ({ children }) => {
   return (
     <TransactionContext.Provider
       value={{
-        tranaction: state,
-        addTransaction: addTransaction,
+        tranactions: state,
+        addTransaction,
       }}
     >
       {children}

@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { TransactionContext } from "./TransactionContext";
 
 const Child = () => {
-  let transactions = useContext(TransactionContext);
+  let { transactions } = useContext(TransactionContext);
   return (
     <div className="container">
       <h1 className="exp-tra">Expense Tracker</h1>
