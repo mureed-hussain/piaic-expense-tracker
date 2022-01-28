@@ -1,6 +1,6 @@
 import { type } from "@testing-library/user-event/dist/type";
 import React, { createContext, useReducer } from "react";
-import TransactionReducer from "./TransReducer";
+import TransReducer from "./TransReducer";
 
 const initialTrans = [
   { amount: 400, desc: "Cash" },
@@ -11,7 +11,7 @@ const initialTrans = [
 export const TransactionContext = createContext(initialTrans);
 
 export const TransactionProvider = ({ children }) => {
-  let [state, dispatch] = useReducer(TransactionReducer, initialTrans);
+  let [state, dispatch] = useReducer(TransReducer, initialTrans);
 
   function addTransaction(transObj) {
     dispatch({
