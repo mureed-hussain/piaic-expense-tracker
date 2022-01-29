@@ -27,9 +27,9 @@ const Child = () => {
         <h3>History</h3>
         <hr />
         <ul className="transaction-list">
-          {transactions.map((transObj, ind) => {
+          {transactions.map((transObj, data) => {
             return (
-              <li key={ind}>
+              <li key={data}>
                 <span>{transObj.desc}</span>
                 <span>{transObj.amount}</span>
               </li>
