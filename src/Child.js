@@ -26,10 +26,10 @@ const Child = () => {
       <div className="history">
         <h3>History</h3>
         <hr />
-        <ul className="transaction-list">
-          {transactions.map((transObj, data) => {
+        <ul className="trnasaction-list">
+          {transactions.map((transObj, ind) => {
             return (
-              <li key={data}>
+              <li key={ind}>
                 <span>{transObj.desc}</span>
                 <span>{transObj.amount}</span>
               </li>
