@@ -26,7 +26,7 @@ const Child = () => {
       <div className="history">
         <h3>History</h3>
         <hr />
-        <ul className="trnasaction-list">
+        <ul className="transaction-list">
           {transactions.map((transObj, ind) => {
             return (
               <li key={ind}>
